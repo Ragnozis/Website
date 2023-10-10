@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>LogIn</title>
+    <title>Авторизация</title>
 </head>
 <body>
-<form>
-<h1>Авторизация</h1>
-    <label for="email">Адрес электронной почты</label>
-    <br>
-    <br>
-    <input id = "email" type="text">
-    <br>
-    <br>
-    <label for="password">Пароль</label>
-    <br>
-    <br>
-    <input id = "password" type="password">
-    <br>
-    <br>
-    <button type="submit">Подтвердить</button>
-</form>
-<br>
-<form action="index.html" target="_blank">
-    <button>На главную страницу</button>
+<form action="" method="post" autocomplete="on">
+    <fieldset>
+        <legend>Авторизация</legend>
+        <label for="email">Адрес электронной почты</label>
+        <br>
+        <br>
+        <input id="email" type="email" name="email" required>
+        <br>
+        <br>
+        <label for="password">Пароль</label>
+        <br>
+        <br>
+        <input id="password" type="password" name="password" required>
+        <br>
+        <br>
+        <button>Подтвердить</button>
+        <a href="index.html">На главную страницу</a>
+    </fieldset>
 </form>
 
 </body>

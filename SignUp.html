@@ -1,53 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>SignUp</title>
+    <title>Регистрация</title>
 </head>
 <body>
-<form>
-    <h1>Регистрация</h1>
+<form action="" method="post" autocomplete="on">
+    <fieldset>
+    <legend>Регистрация</legend>
     <label for="surname">Фамилия</label>
     <br>
     <br>
-    <input id = "surname" type="text">
+    <input id = "surname" type="text" name="surname" required>
     <br>
     <br>
     <label for="name">Имя</label>
     <br>
     <br>
-    <input id = "name" type="text">
+    <input id = "name" type="text" name="name" required>
     <br>
     <br>
     <label for="patronymic">Отчество</label>
     <br>
     <br>
-    <input id = "patronymic" type="text">
+    <input id = "patronymic" type="text" name="patronymic">
     <br>
     <br>
     <label for="email">Адрес электронной почты</label>
     <br>
     <br>
-    <input id = "email" type="email">
+    <input id = "email" type="email" name="email" required>
     <br>
     <br>
     <label for="password">Пароль</label>
     <br>
     <br>
-    <input id = "password" type="password">
+    <input id = "password" type="password" name="password" required>
     <br>
     <br>
     <label for="date">Дата рождения</label>
     <br>
     <br>
-    <input id="date" type="date">
+    <input id="date" type="date" name="date" required>
     <br>
     <br>
-    <button type="submit">Подтвердить</button>
-</form>
-<br>
-<form action="index.html" target="_blank">
-    <button>На главную страницу</button>
+    <button>Подтвердить</button>
+     <a href="index.html">На главную страницу</a>
+    </fieldset>
 </form>
 </body>
 </html>
