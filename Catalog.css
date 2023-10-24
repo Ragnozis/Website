@@ -1,0 +1,104 @@
+body
+{
+    background-image: url("Images/Фон.jpg");
+    background-repeat: no-repeat;
+}
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 0;
+}
+ul {
+    background-color: red;
+    /*height: 45px;*/
+    border-radius: 8px 60px;
+    /*line-height: 50px;*/
+    text-transform: uppercase;
+    border: 2px solid white;
+}
+
+li {
+    padding: 20px 9%;
+}
+
+li:hover {
+    background-color: black;
+    border-radius: 40px 10px;
+    border: 2px solid yellow;
+    color: green;
+    box-shadow: 5px 1px 0;
+    padding-bottom: 2px;
+}
+
+ul > li {
+    display: inline
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+header{
+    width: 100%;
+}
+
+
+.main-nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 60px;
+}
+
+.main-nav > *{
+    /*flex-grow: 1;*/
+    display: block;
+}
+
+.nav-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+img
+{
+    min-width: 240px;
+    max-height: 375px;
+}
+figure
+{
+    color:white;
+    width: 240px;
+    border: 1px white solid;
+    padding: 12px;
+}
+figure:hover
+{
+    background-color: black;
+    border: 2px solid yellow;
+    box-shadow: 5px 1px 0;
+    padding-bottom: 2px;
+}
+figcaption
+{
+    text-align: center;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    padding-left: 20px;
+    color: white;
+    width: 90%;
+
+}
