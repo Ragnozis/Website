@@ -6,6 +6,7 @@
     <meta name="description" content="Онлайн магазин по продаже книг">
     <meta name="author" content="Санцевич Денис">
     <link rel="stylesheet" href="SignUp.css">
+    <script type="text/javascript" src="jquery-3.7.0.min.js"></script>
     <title>Регистрация</title>
 </head>
 <body>
@@ -24,8 +25,23 @@
     <input id = "password" type="password" name="password" required>
     <label for="date">Дата рождения</label>
     <input id="date" type="date" name="date" required>
-    <button>Подтвердить</button>
+    <button onclick="message()">Подтвердить</button>
     </fieldset>
+    <div id="notification">
+        <img alt="" id="close" src="Images/Close.png">
+        <p>Вводите свои настоящие данные, чтобы мы могли с вами связаться</p>
+    </div>
+    <script src="SignUp.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $("#notification #close").click(function(){
+                $(this).parents("#notification").animate({ opacity: "hide" }, "slow");
+            });
+
+        });
+
+    </script>
 </form>
 </body>
 </html>

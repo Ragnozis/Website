@@ -72,3 +72,20 @@ button:hover {
     font-weight: bold;
     transform: scale(1.1);
 }
+#notification
+{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    left: 400px ;
+}
+p
+{
+    padding-top: 30px;
+}
+#close
+{
+    width: 20px;
+    height: 20px;
+}
