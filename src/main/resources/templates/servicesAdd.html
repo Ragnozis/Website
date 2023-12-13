@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Добавить книгу</title>
+    <link th:href="@{/styles/sign.css}" rel="stylesheet" />
+</head>
+<body>
+<main>
+    <form th:action="@{/services/add}" method="post" class="form-add" enctype="multipart/form-data">
+        <fieldset>
+        <legend class="form-title">Добавить книгу</legend>
+        <div class="form-group">
+            <label class="form-label">Название книги: </label>
+            <input class="form-input" type="text" name="name" placeholder="">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Автор книги: </label>
+            <input class="form-input" type="text" name="author" placeholder=" ">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Год выпуска: </label>
+            <input class="form-input" type="text" name="year" placeholder=" ">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Жанр: </label>
+            <input class="form-input" type="text" name="genre" placeholder=" " >
+        </div>
+        <div class="form-group">
+            <label class="form-label">Описание: </label>
+            <input class="form-input" type="text" name="description" placeholder=" ">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Цена: </label>
+            <input class="form-input" type="text" name="price" placeholder=" " >
+        </div>
+
+        <div>
+            <label>
+                <b>Изображения:</b>
+                <input class="select-images" id="image1" type="file" accept="image/png, image/jpeg, image/jpg" name="image1">
+            </label>
+        </div>
+        <div class="button">
+            <button type="submit" class="form-button">Добавить книгу</button>
+        </div>
+        </fieldset>
+    </form>
+
+</main>
+</body>
+
+
+

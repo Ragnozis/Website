@@ -1,0 +1,28 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Аренда</title>
+    <link th:href="@{/styles/services.css}" rel="stylesheet"/>
+</head>
+<center><h1> Наши книги </h1></center>
+<body>
+<main>
+<div th:each="el : ${portfolioBooks}">
+
+    <h3 th:text="${el.name}"></h3>
+
+    <p th:text="${el.description}"></p>
+
+    <img th:src="'/files/' + ${el.images[0]}" alt="" title="">
+
+    <a th:href="'/services/' + ${el.id}">Подробнее</a>
+</div>
+</main>
+</body>
+
+
+

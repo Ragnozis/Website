@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title th:text="${title}"/>
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
+<body>
+<header>
+    <div id="logo">
+        <span>Мир Грёз</span>
+    </div>
+    <div id="about">
+        <a th:href="@{/services}" title="Книги">Каталог книг</a>
+        <a href="/services/add">Добавить книгу</a>
+        <a href="/request">Заявки</a>
+    </div>
+</header>
+<main>
+    <h1>Мир Грёз</h1>
+    <h3>Ваше путешествие сквозь миры!</h3>
+    <div id="pop-up_background">
+        <div id="pop-up">
+            <img alt="cross" id="pop-up_close" src="/styles/img/Close.png" onclick="close_pop_up()">
+            <h1 id="pop-up_title">Внимание!</h1>
+            <h2 id="pop-up_text">Для совершения покупок необходимо вам необходимо оставить заявку. Регистрация не требуется!</h2>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <h5>Обратная связь</h5>
+    <ul>
+        <li>
+            <p>+375257447656</p>
+        </li>
+        <li>
+            <a class = "info" href="mailto:mirgrez@gmail.com">Электронная почта</a>
+        </li>
+    </ul>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    const pop_up = document.getElementById('pop-up');
+    const pup_up_background = document.getElementById('pop-up_background');
+    const body = document.body;
+
+    function close_pop_up()
+    {
+        pop_up.style.display = 'none';
+        pup_up_background.style.display = 'none';
+        body.style.overflow = 'auto'
+
+    }
+
+
+</script>
+</body>
+</html>

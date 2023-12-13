@@ -1,0 +1,27 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Покупка</title>
+    <link th:href="@{/styles/services.css}" rel="stylesheet"/>
+</head>
+<body>
+<center><h1>Заявки</h1></center>
+<main>
+<div th:each="el : ${clients}">
+
+    <b><p>Номер заявки: </b><span th:text="${el.idC}"></span></p>
+    <b><p>Фамилия: </b><span th:text="${el.surname}"></span></p>
+    <b><p>Имя: </b><span th:text="${el.name}"></span></p>
+    <b><p>Отчество: </b><span th:text="${el.patronymic}"></span></p>
+    <b><p>Телефон: </b><span th:text="${el.mobile}"></span></p>
+    <b><p>Email: </b><span th:text="${el.email}"></span></p>
+
+</div>
+</main>
+</body>
+</html>
+

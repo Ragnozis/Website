@@ -1,0 +1,54 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Покупка книг</title>
+    <link th:href="@{/styles/avto.css}" rel="stylesheet" />
+</head>
+<body>
+
+<form class="form-portfolio" method="post">
+    <div th:each="el : ${portfolios}" class="container">
+
+        <div class="">
+            <h1 th:text="${el.name}"></h1>
+            <div class="div-images">
+                <img class="osn_img" th:src="'/files/' + ${el.images[0]}" alt="" title="">
+            </div>
+            <div class="">
+                <p th:text="${el.description}" class="komakt"></p>
+                <div class="ram_ha_pr">
+                    <div class="haracts_tr">
+                        <div class="row">
+                            <p class="head">Название: </p>
+                            <p th:text="${el.name}" class="value"></p>
+                        </div>
+                        <div class="row">
+                            <p class="head">Автор: </p>
+                            <p th:text="${el.author}" class="value"></p>
+                        </div>
+                        <div class="row">
+                            <p class="head">Год выпуска: </p>
+                            <p th:text="${el.year}" class="value"></p>
+                        </div>
+                        <div class="row">
+                            <p class="head">Жанр: </p>
+                            <p th:text="${el.genre}" class="value"></p>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <p><b>Цена:</b> <span th:text="${el.price}" class="value"></span></p>
+                    </div>
+
+
+                </div>
+                <a th:href="'/services/' + ${el.id} + '/buying'" class="buying" type="button">Купить книгу</a>
+            </div>
+        </div>
+    </div>
+</form>
+</body>

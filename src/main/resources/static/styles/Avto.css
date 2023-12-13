@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/Фон.jpg");
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    color: white;
+    border: 1px solid white;
+}
+.div-images
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    text-align:center ;
+}
+
+.osn_img {
+    max-width: 50%;
+    height: 600px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.galls {
+    margin-top: 20px;
+}
+
+.galls_row {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.galls_row img {
+    max-width: 30%;
+    height: auto;
+}
+
+.komakt {
+    font-size: 18px;
+}
+
+.ram_ha_pr {
+    margin-top: 20px;
+}
+
+.haracts_tr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    flex: 1 1 300px;
+    margin: 5px;
+}
+
+.head,
+.value {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.head {
+    font-weight: bold;
+}
+
+.price_row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.head_pr,
+.value_pr {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.buying {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.buying:hover {
+    background-color: #45a049;
+}
